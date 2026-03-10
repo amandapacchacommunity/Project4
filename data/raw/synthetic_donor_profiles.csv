@@ -1,0 +1,31 @@
+donor_id,first_gift_year,giving_tier,engagement_segment,membership_tier,is_active_member,portfolio_assigned,assigned_officer,lifetime_giving,total_gifts,last_gift_year
+D001,2018,Major,Highly Engaged,Leadership Circle,Yes,Yes,Officer_A,25000,15,2024
+D002,2019,Mid-Level,Engaged,Patron,Yes,Yes,Officer_B,7200,10,2024
+D003,2020,Mid-Level,Engaged,Supporter,Yes,Yes,Officer_C,4800,8,2024
+D004,2017,Major,Highly Engaged,Leadership Circle,Yes,Yes,Officer_A,31000,18,2024
+D005,2021,Entry,New Donor,Friend,Yes,No,,350,2,2024
+D006,2016,Major,Highly Engaged,Leadership Circle,Yes,Yes,Officer_B,42000,20,2024
+D007,2019,Mid-Level,Engaged,Patron,Yes,Yes,Officer_C,6700,9,2023
+D008,2022,Entry,New Donor,Friend,Yes,No,,200,1,2024
+D009,2018,Mid-Level,At Risk,Supporter,No,Yes,Officer_B,5100,7,2022
+D010,2015,Major,Highly Engaged,Leadership Circle,Yes,Yes,Officer_A,55000,25,2024
+D011,2019,Entry,Engaged,Friend,Yes,No,,900,4,2024
+D012,2020,Mid-Level,Engaged,Patron,Yes,Yes,Officer_C,6100,8,2024
+D013,2017,Major,Engaged,Leadership Circle,Yes,Yes,Officer_B,27500,13,2023
+D014,2021,Entry,New Donor,Friend,Yes,No,,150,1,2024
+D015,2016,Major,Highly Engaged,Leadership Circle,Yes,Yes,Officer_A,39000,17,2024
+D016,2018,Mid-Level,Engaged,Patron,Yes,Yes,Officer_C,8300,11,2024
+D017,2019,Entry,Engaged,Friend,Yes,No,,600,3,2024
+D018,2017,Major,Engaged,Leadership Circle,Yes,Yes,Officer_B,26000,12,2023
+D019,2022,Entry,New Donor,Friend,Yes,No,,120,1,2024
+D020,2018,Mid-Level,At Risk,Supporter,No,Yes,Officer_C,5400,6,2022
+D021,2016,Major,Highly Engaged,Leadership Circle,Yes,Yes,Officer_A,47000,21,2024
+D022,2020,Mid-Level,Engaged,Patron,Yes,Yes,Officer_B,7100,9,2024
+D023,2019,Entry,Engaged,Friend,Yes,No,,500,2,2024
+D024,2017,Major,Engaged,Leadership Circle,Yes,Yes,Officer_C,29500,14,2023
+D025,2021,Entry,New Donor,Friend,Yes,No,,180,1,2024
+D026,2018,Mid-Level,Engaged,Patron,Yes,Yes,Officer_B,6800,10,2024
+D027,2016,Major,Highly Engaged,Leadership Circle,Yes,Yes,Officer_A,51000,23,2024
+D028,2019,Mid-Level,Engaged,Supporter,Yes,Yes,Officer_C,4600,7,2024
+D029,2020,Entry,Engaged,Friend,Yes,No,,700,3,2024
+D030,2017,Major,Engaged,Leadership Circle,Yes,Yes,Officer_B,34000,16,2024
