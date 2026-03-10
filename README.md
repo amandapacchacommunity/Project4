@@ -1,57 +1,73 @@
-# Project4 – Advancement Portfolio and Fundraising Stability Analysis Repository
+# Project4 – Advancement Portfolio and Donor Retention Analysis Repository
 
 ## Overview
 
-This repository contains a synthetic, analysis-ready project focused on evaluating **donor profile structures, portfolio coverage, fundraising staff retention, and campaign and membership retention indicators** within the Advancement function of a mission-driven nonprofit organization.
+This repository contains a synthetic analysis project designed to evaluate **donor profile structures, portfolio coverage, membership retention, pledge fulfillment, and campaign participation stability** within the Advancement function of a mission-driven nonprofit organization.
 
-The analysis is designed to support **executive leadership decision-making** through a comparative review across a **three-year period (FY2022–FY2024)**. It reflects a lean advancement function responsible for donor cultivation, annual fundraising activity, grant support, foundation support, membership stewardship, and targeted donor engagement.
+The analysis reviews donor engagement patterns across a **three-year comparative period (FY2022–FY2024)** and provides structured insights intended to support **executive leadership decision-making** related to donor continuity, engagement stability, and fundraising sustainability.
 
-All data included in this repository is **synthetic** and created solely for demonstration, portfolio, and analytical workflow purposes. It does **not** represent any real organization, donor base, employee history, campaign, or fundraising performance record.
+The project models a lean advancement function responsible for:
+
+- donor cultivation
+- annual fundraising initiatives
+- grant support
+- membership engagement
+- campaign participation
+- pledge management
+- donor stewardship
+
+All data used in this repository is **synthetic** and created solely for demonstration and analytical workflow purposes. No real organizational or donor data is included.
 
 ---
 
 ## Project Purpose
 
-The purpose of this repository is to provide decision-ready insights on:
+The purpose of this repository is to provide decision-ready insights into:
 
-- donor portfolio structure and segmentation
-- portfolio coverage across fundraising staff
-- fundraising staff retention and stability
-- campaign and membership retention indicators
-- donor engagement patterns across a three-year period
-- leadership recommendations grounded in operational analysis
+- donor portfolio coverage and segmentation
+- membership retention patterns
+- pledge fulfillment and pledge retention
+- campaign participation stability
+- donor engagement trends across a three-year period
+- portfolio distribution across advancement staff
 
-This project is intended to help leadership assess whether the current Advancement structure is sustainable, whether donor coverage is appropriately distributed, and where retention or engagement risks may exist.
+This analysis helps leadership evaluate whether the organization’s donor base is stable, growing, or showing signs of engagement risk.
 
 ---
 
 ## Core Questions
 
-This repository is designed to answer the following questions:
+This project is designed to answer the following questions:
 
-1. **Portfolio Coverage**
-   - How are donor portfolios structured across the Advancement function?
-   - Are donors distributed appropriately across fundraisers and engagement tiers?
-   - Are there signs of uneven coverage, over-assignment, or unmanaged segments?
+### Donor Portfolio Structure
+- How are donors segmented by giving level and engagement history?
+- What portion of the donor base is actively assigned within portfolios?
+- Are donor portfolios evenly distributed across fundraising staff?
 
-2. **Donor Profile Structure**
-   - How are donors segmented by contribution level, giving history, and engagement profile?
-   - What portion of the donor base is actively assigned, stewarded, or at risk of limited engagement?
+### Portfolio Coverage
+- Are donor portfolios balanced in size and composition?
+- Are there segments of the donor base that are not actively stewarded?
+- Do high-value donors receive consistent portfolio coverage?
 
-3. **Fundraising Staff Retention and Stability**
-   - What are the three-year retention and attrition trends among fundraising staff?
-   - Are there donor-facing functions with elevated turnover risk?
-   - Where might staffing instability affect donor continuity?
+### Membership Retention
+- What are the year-over-year membership renewal rates?
+- Are there trends in membership lapse or reactivation?
+- Which membership tiers show the strongest or weakest retention?
 
-4. **Campaign and Membership Retention**
-   - How have campaign participation and membership retention changed across the three-year period?
-   - Are there patterns in renewal, lapse, or re-engagement that leadership should monitor?
-   - How do donor engagement patterns connect to retention outcomes?
+### Pledge Retention and Fulfillment
+- What percentage of pledges are fulfilled within the expected period?
+- Are there trends in pledge completion versus pledge lapse?
+- Do pledge patterns vary by donor tier or campaign participation?
 
-5. **Leadership Decision Support**
-   - Where are the most significant risks in donor coverage and fundraising continuity?
-   - What structural or operational adjustments should leadership consider?
-   - What indicators should be monitored going forward?
+### Campaign Participation Stability
+- How stable is donor participation in annual campaigns across the three-year period?
+- Are repeat donors maintaining consistent engagement?
+- What patterns exist in new, returning, or lapsed campaign donors?
+
+### Leadership Decision Support
+- Where are the most significant risks to donor continuity?
+- Are portfolio assignments supporting sustained donor engagement?
+- What indicators should leadership monitor for donor retention trends?
 
 ---
 
@@ -59,103 +75,61 @@ This repository is designed to answer the following questions:
 
 The repository includes four primary analytical components.
 
-### 1. Donor Profile and Portfolio Structure
+### 1. Donor Profile and Segmentation
 
-This section evaluates how donor records are segmented and assigned across the Advancement function.
+This section evaluates how donors are categorized across the fundraising system.
 
 It includes:
+
 - donor segmentation by giving tier
-- engagement history categories
-- portfolio assignment structure
-- assigned versus unassigned donor coverage
-- portfolio distribution across fundraising staff
-- concentration of donors within key giving segments
-
-### 2. Portfolio Coverage Analysis
-
-This section reviews whether donor portfolios appear balanced and adequately managed.
-
-It includes:
-- donor counts by assigned fundraiser
-- donor coverage by contribution tier
-- active portfolio versus unmanaged donor segments
-- portfolio concentration patterns
-- staff-to-portfolio coverage summaries
-- identification of possible coverage gaps
-
-### 3. Fundraising Retention and Stability
-
-This section examines staffing continuity and turnover patterns within the Advancement team.
-
-It includes:
-- three-year staff retention and attrition trends
-- tenure patterns across donor-facing functions
-- continuity risks affecting stewardship and cultivation
-- identification of roles or functions with elevated turnover patterns
-- summary indicators relevant to operational sustainability
-
-### 4. Campaign and Membership Retention Indicators
-
-This section evaluates fundraising participation and retention patterns over time.
-
-It includes:
-- membership renewal and lapse trends
-- campaign participation trends
-- donor re-engagement indicators
-- retention by donor segment
-- year-over-year comparisons in participation stability
-- summary metrics supporting leadership review
+- engagement history classification
+- membership status categories
+- campaign participation history
+- pledge participation indicators
+- donor lifecycle stage summaries
 
 ---
 
-## Repository Contents
+### 2. Portfolio Coverage Analysis
 
-```text
-Project4-advancement-portfolio-fundraising-stability-analysis/
-│
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
-├── data/
-│   ├── raw/
-│   │   ├── synthetic_staff_roster.csv
-│   │   ├── synthetic_retention_history.csv
-│   │   ├── synthetic_donor_summary.csv
-│   │   ├── synthetic_portfolio_assignments.csv
-│   │   ├── synthetic_membership_retention.csv
-│   │   └── synthetic_campaign_participation.csv
-│   │
-│   └── processed/
-│       └── .gitkeep
-│
-├── notebooks/
-│   ├── 01_data_validation_and_preparation.ipynb
-│   ├── 02_donor_profile_and_portfolio_structure.ipynb
-│   ├── 03_portfolio_coverage_analysis.ipynb
-│   ├── 04_fundraising_retention_and_stability.ipynb
-│   └── 05_campaign_and_membership_retention.ipynb
-│
-├── src/
-│   ├── __init__.py
-│   ├── config.py
-│   ├── data_loader.py
-│   ├── data_generation.py
-│   ├── donor_analysis.py
-│   ├── portfolio_analysis.py
-│   ├── retention_analysis.py
-│   └── visualization.py
-│
-├── outputs/
-│   ├── charts/
-│   │   └── .gitkeep
-│   ├── tables/
-│   │   └── .gitkeep
-│   └── reports/
-│       └── .gitkeep
-│
-└── docs/
-    ├── project_brief.md
-    ├── methodology.md
-    ├── data_dictionary.md
-    └── leadership_recommendations_template.md
+This section reviews how donors are assigned and stewarded through advancement portfolios.
+
+It includes:
+
+- donor assignments across fundraisers
+- number of donors per portfolio
+- distribution of donor tiers across portfolios
+- identification of unassigned donors
+- coverage gaps in higher-giving segments
+
+---
+
+### 3. Membership Retention Analysis
+
+This section analyzes membership continuity across the three-year period.
+
+It includes:
+
+- membership renewal rates
+- lapse and reactivation trends
+- retention comparisons by membership tier
+- year-over-year retention patterns
+- participation stability indicators
+
+---
+
+### 4. Pledge and Campaign Participation Stability
+
+This section evaluates donor commitment to fundraising campaigns and pledges.
+
+It includes:
+
+- pledge fulfillment rates
+- pledge completion timelines
+- campaign participation by year
+- repeat campaign participation trends
+- identification of lapsed campaign donors
+
+---
+
+## Repository Structure
