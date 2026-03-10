@@ -1,0 +1,91 @@
+donor_id,fiscal_year,campaign_participated,campaign_gift_amount,donor_status
+D001,2022,Yes,3000,Repeat
+D001,2023,Yes,3500,Repeat
+D001,2024,Yes,4000,Repeat
+D002,2022,Yes,800,Repeat
+D002,2023,Yes,900,Repeat
+D002,2024,Yes,1000,Repeat
+D003,2022,Yes,600,Repeat
+D003,2023,Yes,650,Repeat
+D003,2024,Yes,700,Repeat
+D004,2022,Yes,5000,Repeat
+D004,2023,Yes,5200,Repeat
+D004,2024,Yes,5500,Repeat
+D005,2022,No,0,Not Participating
+D005,2023,Yes,200,New
+D005,2024,Yes,250,Repeat
+D006,2022,Yes,7000,Repeat
+D006,2023,Yes,7200,Repeat
+D006,2024,Yes,7500,Repeat
+D007,2022,Yes,900,Repeat
+D007,2023,Yes,1000,Repeat
+D007,2024,No,0,Lapsed
+D008,2022,No,0,Not Participating
+D008,2023,Yes,150,New
+D008,2024,Yes,200,Repeat
+D009,2022,Yes,700,Repeat
+D009,2023,No,0,Lapsed
+D009,2024,No,0,Lapsed
+D010,2022,Yes,10000,Repeat
+D010,2023,Yes,10500,Repeat
+D010,2024,Yes,11000,Repeat
+D011,2022,Yes,200,New
+D011,2023,Yes,250,Repeat
+D011,2024,Yes,300,Repeat
+D012,2022,Yes,850,Repeat
+D012,2023,Yes,900,Repeat
+D012,2024,Yes,950,Repeat
+D013,2022,Yes,2500,Repeat
+D013,2023,Yes,2600,Repeat
+D013,2024,No,0,Lapsed
+D014,2022,No,0,Not Participating
+D014,2023,Yes,150,New
+D014,2024,Yes,200,Repeat
+D015,2022,Yes,4500,Repeat
+D015,2023,Yes,4700,Repeat
+D015,2024,Yes,5000,Repeat
+D016,2022,Yes,950,Repeat
+D016,2023,Yes,1000,Repeat
+D016,2024,Yes,1050,Repeat
+D017,2022,No,0,Not Participating
+D017,2023,Yes,200,New
+D017,2024,Yes,250,Repeat
+D018,2022,Yes,2000,Repeat
+D018,2023,Yes,2100,Repeat
+D018,2024,No,0,Lapsed
+D019,2022,No,0,Not Participating
+D019,2023,No,0,Not Participating
+D019,2024,Yes,150,New
+D020,2022,Yes,750,Repeat
+D020,2023,No,0,Lapsed
+D020,2024,No,0,Lapsed
+D021,2022,Yes,6000,Repeat
+D021,2023,Yes,6200,Repeat
+D021,2024,Yes,6500,Repeat
+D022,2022,Yes,850,Repeat
+D022,2023,Yes,900,Repeat
+D022,2024,Yes,950,Repeat
+D023,2022,No,0,Not Participating
+D023,2023,Yes,200,New
+D023,2024,Yes,250,Repeat
+D024,2022,Yes,3000,Repeat
+D024,2023,Yes,3200,Repeat
+D024,2024,No,0,Lapsed
+D025,2022,No,0,Not Participating
+D025,2023,Yes,150,New
+D025,2024,Yes,200,Repeat
+D026,2022,Yes,900,Repeat
+D026,2023,Yes,950,Repeat
+D026,2024,Yes,1000,Repeat
+D027,2022,Yes,8000,Repeat
+D027,2023,Yes,8200,Repeat
+D027,2024,Yes,8500,Repeat
+D028,2022,Yes,650,Repeat
+D028,2023,Yes,700,Repeat
+D028,2024,Yes,750,Repeat
+D029,2022,No,0,Not Participating
+D029,2023,Yes,200,New
+D029,2024,Yes,250,Repeat
+D030,2022,Yes,4000,Repeat
+D030,2023,Yes,4200,Repeat
+D030,2024,Yes,4500,Repeat
