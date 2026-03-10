@@ -133,3 +133,75 @@ It includes:
 ---
 
 ## Repository Structure
+
+---
+
+## Synthetic Organizational Context
+
+The synthetic organization represented in this repository models a nonprofit with approximately **$5M in annual operating revenue**.
+
+The Advancement function supports:
+
+- individual giving
+- membership fundraising
+- campaign-based fundraising
+- pledge-based giving commitments
+- grant funding
+- donor stewardship
+
+The project focuses on **donor engagement continuity and portfolio coverage**, not staffing or compensation.
+
+---
+
+## Example Analytical Outputs
+
+The repository is designed to produce outputs such as:
+
+- donor segmentation summaries
+- portfolio coverage tables
+- charts of assigned versus unassigned donor segments
+- membership renewal rate visualizations
+- pledge fulfillment charts
+- campaign participation trend analysis
+- leadership-ready summary tables
+
+---
+
+## Tools and Methods
+
+The project is implemented using:
+
+- Python
+- pandas
+- numpy
+- matplotlib
+- Jupyter notebooks
+
+Methods include:
+
+- descriptive donor analysis
+- membership retention calculation
+- pledge fulfillment tracking
+- portfolio coverage assessment
+- year-over-year participation comparison
+- visualization for leadership review
+
+---
+
+## Data Disclaimer
+
+All datasets included in this repository are **synthetic** and created for analytical demonstration purposes only.
+
+They do not represent real donors, organizations, campaigns, or fundraising activity.
+
+---
+
+## Status
+
+Repository structure and synthetic dataset framework in development.
+
+---
+
+## License
+
+Educational and demonstration use only.
