@@ -1,12 +1,12 @@
-# Project4 – Advancement Compensation and Portfolio Analysis Repository
+# Project4 – Advancement Portfolio and Fundraising Stability Analysis Repository
 
 ## Overview
 
-This repository contains a synthetic, analysis-ready project designed to evaluate compensation competitiveness, fundraising staff retention, donor portfolio coverage, and role alignment within the Advancement function of a mission-driven nonprofit organization operating with an approximate **$5M annual budget**.
+This repository contains a synthetic, analysis-ready project focused on evaluating **donor profile structures, portfolio coverage, fundraising staff retention, and campaign and membership retention indicators** within the Advancement function of a mission-driven nonprofit organization.
 
-The project is structured to support **executive leadership decision-making** through comparative analysis across a **three-year period (FY2022–FY2024)**. It focuses on a lean advancement team responsible for donor cultivation, annual fundraising initiatives, grant support, foundation relations, membership stewardship, and emerging major gift development.
+The analysis is designed to support **executive leadership decision-making** through a comparative review across a **three-year period (FY2022–FY2024)**. It reflects a lean advancement function responsible for donor cultivation, annual fundraising activity, grant support, foundation support, membership stewardship, and targeted donor engagement.
 
-All data included in this repository is **synthetic** and created solely for demonstration, portfolio, and analytical workflow purposes. It does **not** represent any real organization, donor base, compensation record, or employee history.
+All data included in this repository is **synthetic** and created solely for demonstration, portfolio, and analytical workflow purposes. It does **not** represent any real organization, donor base, employee history, campaign, or fundraising performance record.
 
 ---
 
@@ -14,14 +14,14 @@ All data included in this repository is **synthetic** and created solely for dem
 
 The purpose of this repository is to provide decision-ready insights on:
 
-- advancement compensation competitiveness
-- fundraising staff retention and attrition risk
-- donor portfolio distribution and staff coverage
-- role alignment across fundraising functions
-- relationship between staffing structure and fundraising expectations
-- leadership recommendations grounded in comparative and operational analysis
+- donor portfolio structure and segmentation
+- portfolio coverage across fundraising staff
+- fundraising staff retention and stability
+- campaign and membership retention indicators
+- donor engagement patterns across a three-year period
+- leadership recommendations grounded in operational analysis
 
-This analysis is intended to help leadership assess whether the current Advancement structure is sustainable, competitive, and aligned with fundraising strategy.
+This project is intended to help leadership assess whether the current Advancement structure is sustainable, whether donor coverage is appropriately distributed, and where retention or engagement risks may exist.
 
 ---
 
@@ -29,27 +29,29 @@ This analysis is intended to help leadership assess whether the current Advancem
 
 This repository is designed to answer the following questions:
 
-1. **Compensation Competitiveness**
-   - How do advancement salaries compare to similar nonprofit organizations with budgets between **$3M and $10M**?
-   - Are donor-facing staff compensated in a way that aligns with portfolio complexity and fundraising expectations?
+1. **Portfolio Coverage**
+   - How are donor portfolios structured across the Advancement function?
+   - Are donors distributed appropriately across fundraisers and engagement tiers?
+   - Are there signs of uneven coverage, over-assignment, or unmanaged segments?
 
-2. **Retention and Stability**
-   - What are the three-year retention and attrition trends within the Advancement team?
-   - Are there roles with elevated turnover risk?
-   - Is compensation competitiveness associated with retention outcomes?
+2. **Donor Profile Structure**
+   - How are donors segmented by contribution level, giving history, and engagement profile?
+   - What portion of the donor base is actively assigned, stewarded, or at risk of limited engagement?
 
-3. **Role and Portfolio Structure**
-   - How are advancement roles distributed across major gifts, annual giving, grants, stewardship, membership, and operations?
-   - Are portfolio sizes and donor assignments reasonable relative to staff capacity?
-   - Is donor coverage consistent across gift tiers and engagement segments?
+3. **Fundraising Staff Retention and Stability**
+   - What are the three-year retention and attrition trends among fundraising staff?
+   - Are there donor-facing functions with elevated turnover risk?
+   - Where might staffing instability affect donor continuity?
 
-4. **Fundraising Strategy Alignment**
-   - Does the current team structure support the organization’s fundraising model?
-   - Are staffing expectations aligned with campaign participation, donor engagement, and revenue growth goals?
+4. **Campaign and Membership Retention**
+   - How have campaign participation and membership retention changed across the three-year period?
+   - Are there patterns in renewal, lapse, or re-engagement that leadership should monitor?
+   - How do donor engagement patterns connect to retention outcomes?
 
 5. **Leadership Decision Support**
-   - What changes to compensation, staffing, or portfolio allocation should leadership consider?
-   - Where are the most significant structural risks and opportunities?
+   - Where are the most significant risks in donor coverage and fundraising continuity?
+   - What structural or operational adjustments should leadership consider?
+   - What indicators should be monitored going forward?
 
 ---
 
@@ -57,59 +59,59 @@ This repository is designed to answer the following questions:
 
 The repository includes four primary analytical components.
 
-### 1. Advancement Compensation Benchmarking
+### 1. Donor Profile and Portfolio Structure
 
-This section evaluates salary and total compensation trends for advancement roles across FY2022–FY2024.
-
-It includes:
-- role-by-role salary comparisons
-- synthetic market benchmarks for comparable nonprofits
-- compensation growth over time
-- comparison of salary positioning relative to fundraising responsibility
-- review of alignment between portfolio size, role scope, and compensation
-
-### 2. Fundraising Retention and Stability
-
-This section reviews staffing continuity and turnover risk across the Advancement function.
+This section evaluates how donor records are segmented and assigned across the Advancement function.
 
 It includes:
-- three-year staff retention and attrition patterns
-- average tenure by role type
-- turnover concentration in donor-facing positions
-- comparison of compensation positioning and retention outcomes
-- identification of roles with elevated instability risk
+- donor segmentation by giving tier
+- engagement history categories
+- portfolio assignment structure
+- assigned versus unassigned donor coverage
+- portfolio distribution across fundraising staff
+- concentration of donors within key giving segments
 
-### 3. Advancement Role and Portfolio Structure
+### 2. Portfolio Coverage Analysis
 
-This section examines staffing design and donor portfolio coverage.
+This section reviews whether donor portfolios appear balanced and adequately managed.
 
 It includes:
-- distribution of roles across advancement functions
-- portfolio segmentation by donor tier and engagement history
-- donor coverage by assigned staff
-- comparison of portfolio size against staff capacity
-- review of role scope relative to fundraising strategy
+- donor counts by assigned fundraiser
+- donor coverage by contribution tier
+- active portfolio versus unmanaged donor segments
+- portfolio concentration patterns
+- staff-to-portfolio coverage summaries
+- identification of possible coverage gaps
 
-### 4. Fundraising Strategy and Donor Engagement Alignment
+### 3. Fundraising Retention and Stability
 
-This section evaluates whether the current Advancement structure supports the organization’s fundraising model.
+This section examines staffing continuity and turnover patterns within the Advancement team.
 
-The fundraising model represented in this repository includes:
-- individual giving
-- membership giving
-- grant and foundation support
-- small-scale donor events
-- targeted donor cultivation
-- stewardship of mid-level and emerging major donors
+It includes:
+- three-year staff retention and attrition trends
+- tenure patterns across donor-facing functions
+- continuity risks affecting stewardship and cultivation
+- identification of roles or functions with elevated turnover patterns
+- summary indicators relevant to operational sustainability
 
-This component explores whether the team structure is positioned to support both ongoing fundraising operations and longer-term revenue growth.
+### 4. Campaign and Membership Retention Indicators
+
+This section evaluates fundraising participation and retention patterns over time.
+
+It includes:
+- membership renewal and lapse trends
+- campaign participation trends
+- donor re-engagement indicators
+- retention by donor segment
+- year-over-year comparisons in participation stability
+- summary metrics supporting leadership review
 
 ---
 
 ## Repository Contents
 
 ```text
-Project4-advancement-compensation-portfolio-analysis/
+Project4-advancement-portfolio-fundraising-stability-analysis/
 │
 ├── README.md
 ├── requirements.txt
@@ -118,30 +120,30 @@ Project4-advancement-compensation-portfolio-analysis/
 ├── data/
 │   ├── raw/
 │   │   ├── synthetic_staff_roster.csv
-│   │   ├── synthetic_compensation_history.csv
-│   │   ├── synthetic_portfolio_assignments.csv
-│   │   ├── synthetic_donor_summary.csv
 │   │   ├── synthetic_retention_history.csv
-│   │   └── synthetic_market_benchmark.csv
+│   │   ├── synthetic_donor_summary.csv
+│   │   ├── synthetic_portfolio_assignments.csv
+│   │   ├── synthetic_membership_retention.csv
+│   │   └── synthetic_campaign_participation.csv
 │   │
 │   └── processed/
 │       └── .gitkeep
 │
 ├── notebooks/
 │   ├── 01_data_validation_and_preparation.ipynb
-│   ├── 02_compensation_benchmarking.ipynb
-│   ├── 03_retention_and_turnover_analysis.ipynb
-│   ├── 04_portfolio_structure_analysis.ipynb
-│   └── 05_leadership_summary_outputs.ipynb
+│   ├── 02_donor_profile_and_portfolio_structure.ipynb
+│   ├── 03_portfolio_coverage_analysis.ipynb
+│   ├── 04_fundraising_retention_and_stability.ipynb
+│   └── 05_campaign_and_membership_retention.ipynb
 │
 ├── src/
 │   ├── __init__.py
 │   ├── config.py
 │   ├── data_loader.py
 │   ├── data_generation.py
-│   ├── compensation_analysis.py
-│   ├── retention_analysis.py
+│   ├── donor_analysis.py
 │   ├── portfolio_analysis.py
+│   ├── retention_analysis.py
 │   └── visualization.py
 │
 ├── outputs/
