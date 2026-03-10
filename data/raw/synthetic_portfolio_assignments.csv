@@ -1,0 +1,31 @@
+donor_id,portfolio_assigned,assigned_officer,portfolio_type,primary_focus,last_contact_year
+D001,Yes,Officer_A,Major Gifts,Major Donors,2024
+D002,Yes,Officer_B,Leadership Gifts,Mid-Level Donors,2024
+D003,Yes,Officer_C,Leadership Gifts,Mid-Level Donors,2024
+D004,Yes,Officer_A,Major Gifts,Major Donors,2024
+D005,No,,Unassigned,Entry Donors,2024
+D006,Yes,Officer_B,Major Gifts,Major Donors,2024
+D007,Yes,Officer_C,Leadership Gifts,Mid-Level Donors,2023
+D008,No,,Unassigned,Entry Donors,2024
+D009,Yes,Officer_B,Leadership Gifts,Mid-Level Donors,2022
+D010,Yes,Officer_A,Major Gifts,Major Donors,2024
+D011,No,,Unassigned,Entry Donors,2024
+D012,Yes,Officer_C,Leadership Gifts,Mid-Level Donors,2024
+D013,Yes,Officer_B,Major Gifts,Major Donors,2023
+D014,No,,Unassigned,Entry Donors,2024
+D015,Yes,Officer_A,Major Gifts,Major Donors,2024
+D016,Yes,Officer_C,Leadership Gifts,Mid-Level Donors,2024
+D017,No,,Unassigned,Entry Donors,2024
+D018,Yes,Officer_B,Major Gifts,Major Donors,2023
+D019,No,,Unassigned,Entry Donors,2024
+D020,Yes,Officer_C,Leadership Gifts,Mid-Level Donors,2022
+D021,Yes,Officer_A,Major Gifts,Major Donors,2024
+D022,Yes,Officer_B,Leadership Gifts,Mid-Level Donors,2024
+D023,No,,Unassigned,Entry Donors,2024
+D024,Yes,Officer_C,Major Gifts,Major Donors,2023
+D025,No,,Unassigned,Entry Donors,2024
+D026,Yes,Officer_B,Leadership Gifts,Mid-Level Donors,2024
+D027,Yes,Officer_A,Major Gifts,Major Donors,2024
+D028,Yes,Officer_C,Leadership Gifts,Mid-Level Donors,2024
+D029,No,,Unassigned,Entry Donors,2024
+D030,Yes,Officer_B,Major Gifts,Major Donors,2024
