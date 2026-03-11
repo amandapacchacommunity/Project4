@@ -1,207 +1,91 @@
-# Project4 – Advancement Portfolio and Donor Retention Analysis Repository
+# Advancement Portfolio and Donor Retention Analysis
 
-## Overview
+## Project Overview
 
-This repository contains a synthetic analysis project designed to evaluate **donor profile structures, portfolio coverage, membership retention, pledge fulfillment, and campaign participation stability** within the Advancement function of a mission-driven nonprofit organization.
+This repository contains an exploratory data analysis project focused on donor engagement, membership participation, and pledge fulfillment trends within a nonprofit advancement environment.
 
-The analysis reviews donor engagement patterns across a **three-year comparative period (FY2022–FY2024)** and provides structured insights intended to support **executive leadership decision-making** related to donor continuity, engagement stability, and fundraising sustainability.
+The goal of this project is to demonstrate how structured data analysis can support fundraising strategy, donor retention planning, and advancement portfolio management.
 
-The project models a lean advancement function responsible for:
-
-- donor cultivation
-- annual fundraising initiatives
-- grant support
-- membership engagement
-- campaign participation
-- pledge management
-- donor stewardship
-
-All data used in this repository is **synthetic** and created solely for demonstration and analytical workflow purposes. No real organizational or donor data is included.
+The analysis uses **synthetic nonprofit datasets** to simulate donor records, membership participation, and pledge activity across multiple years.
 
 ---
 
-## Project Purpose
+## Project Objectives
 
-The purpose of this repository is to provide decision-ready insights into:
+This project explores several advancement analytics questions:
 
-- donor portfolio coverage and segmentation
-- membership retention patterns
-- pledge fulfillment and pledge retention
-- campaign participation stability
-- donor engagement trends across a three-year period
-- portfolio distribution across advancement staff
-
-This analysis helps leadership evaluate whether the organization’s donor base is stable, growing, or showing signs of engagement risk.
-
----
-
-## Core Questions
-
-This project is designed to answer the following questions:
-
-### Donor Portfolio Structure
-- How are donors segmented by giving level and engagement history?
-- What portion of the donor base is actively assigned within portfolios?
-- Are donor portfolios evenly distributed across fundraising staff?
-
-### Portfolio Coverage
-- Are donor portfolios balanced in size and composition?
-- Are there segments of the donor base that are not actively stewarded?
-- Do high-value donors receive consistent portfolio coverage?
-
-### Membership Retention
-- What are the year-over-year membership renewal rates?
-- Are there trends in membership lapse or reactivation?
-- Which membership tiers show the strongest or weakest retention?
-
-### Pledge Retention and Fulfillment
-- What percentage of pledges are fulfilled within the expected period?
-- Are there trends in pledge completion versus pledge lapse?
-- Do pledge patterns vary by donor tier or campaign participation?
-
-### Campaign Participation Stability
-- How stable is donor participation in annual campaigns across the three-year period?
-- Are repeat donors maintaining consistent engagement?
-- What patterns exist in new, returning, or lapsed campaign donors?
-
-### Leadership Decision Support
-- Where are the most significant risks to donor continuity?
-- Are portfolio assignments supporting sustained donor engagement?
-- What indicators should leadership monitor for donor retention trends?
-
----
-
-## Scope of Analysis
-
-The repository includes four primary analytical components.
-
-### 1. Donor Profile and Segmentation
-
-This section evaluates how donors are categorized across the fundraising system.
-
-It includes:
-
-- donor segmentation by giving tier
-- engagement history classification
-- membership status categories
-- campaign participation history
-- pledge participation indicators
-- donor lifecycle stage summaries
-
----
-
-### 2. Portfolio Coverage Analysis
-
-This section reviews how donors are assigned and stewarded through advancement portfolios.
-
-It includes:
-
-- donor assignments across fundraisers
-- number of donors per portfolio
-- distribution of donor tiers across portfolios
-- identification of unassigned donors
-- coverage gaps in higher-giving segments
-
----
-
-### 3. Membership Retention Analysis
-
-This section analyzes membership continuity across the three-year period.
-
-It includes:
-
-- membership renewal rates
-- lapse and reactivation trends
-- retention comparisons by membership tier
-- year-over-year retention patterns
-- participation stability indicators
-
----
-
-### 4. Pledge and Campaign Participation Stability
-
-This section evaluates donor commitment to fundraising campaigns and pledges.
-
-It includes:
-
-- pledge fulfillment rates
-- pledge completion timelines
-- campaign participation by year
-- repeat campaign participation trends
-- identification of lapsed campaign donors
+* How membership participation changes over time
+* Patterns in donor engagement and giving behavior
+* Distribution of membership levels across the donor base
+* Pledge fulfillment trends and outstanding commitments
+* Data preparation workflows for nonprofit fundraising analysis
 
 ---
 
 ## Repository Structure
 
----
-
-## Synthetic Organizational Context
-
-The synthetic organization represented in this repository models a nonprofit with approximately **$5M in annual operating revenue**.
-
-The Advancement function supports:
-
-- individual giving
-- membership fundraising
-- campaign-based fundraising
-- pledge-based giving commitments
-- grant funding
-- donor stewardship
-
-The project focuses on **donor engagement continuity and portfolio coverage**, not staffing or compensation.
+```
+Project4
+│
+├── notebooks
+│   └── 01_data_validation_and_preparation.ipynb
+│
+├── data
+│
+└── README.md
+```
 
 ---
 
-## Example Analytical Outputs
+## Notebook Description
 
-The repository is designed to produce outputs such as:
+### 01_data_validation_and_preparation.ipynb
 
-- donor segmentation summaries
-- portfolio coverage tables
-- charts of assigned versus unassigned donor segments
-- membership renewal rate visualizations
-- pledge fulfillment charts
-- campaign participation trend analysis
-- leadership-ready summary tables
+This notebook performs the following steps:
 
----
-
-## Tools and Methods
-
-The project is implemented using:
-
-- Python
-- pandas
-- numpy
-- matplotlib
-- Jupyter notebooks
-
-Methods include:
-
-- descriptive donor analysis
-- membership retention calculation
-- pledge fulfillment tracking
-- portfolio coverage assessment
-- year-over-year participation comparison
-- visualization for leadership review
+* Loads required Python libraries
+* Generates synthetic nonprofit donor datasets
+* Validates dataset structure and record counts
+* Displays sample records for inspection
+* Visualizes membership level distribution
+* Analyzes pledge fulfillment status
 
 ---
 
-## Data Disclaimer
+## Technologies Used
 
-All datasets included in this repository are **synthetic** and created for analytical demonstration purposes only.
-
-They do not represent real donors, organizations, campaigns, or fundraising activity.
-
----
-
-## Status
-
-Repository structure and synthetic dataset framework in development.
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Google Colab
+* GitHub
 
 ---
 
-## License
+## Example Insights
 
-Educational and demonstration use only.
+The analysis demonstrates how nonprofit organizations can use donor data to:
+
+* Monitor membership engagement
+* Identify trends in donor participation
+* Track pledge fulfillment performance
+* Support advancement decision-making with data
+
+---
+
+## Future Analysis
+
+Additional notebooks may expand this project to include:
+
+* Membership retention rate analysis
+* Donor segmentation by engagement level
+* Portfolio coverage modeling
+* Visualization dashboards for advancement leadership
+
+---
+
+## Author
+
+Amanda
