@@ -1,172 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project4 | Advancement Portfolio and Donor Retention Analysis</title>
-  <style>
-    :root {
-      --bg: #f7f8fb;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --accent: #2563eb;
-      --border: #e5e7eb;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    .hero {
-      background: linear-gradient(135deg, #1d4ed8, #0f172a);
-      color: white;
-      padding: 72px 20px 56px;
-    }
-    .wrap {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    h1, h2, h3 { margin: 0 0 12px; }
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 1.5rem; margin-bottom: 16px; }
-    p { margin: 0 0 14px; }
-    .sub {
-      font-size: 1.1rem;
-      max-width: 760px;
-      color: rgba(255,255,255,.9);
-    }
-    .section {
-      padding: 40px 20px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 20px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
-    }
-    .muted { color: var(--muted); }
-    ul { margin: 8px 0 0 20px; }
-    .pill {
-      display: inline-block;
-      background: #dbeafe;
-      color: #1d4ed8;
-      padding: 6px 10px;
-      border-radius: 999px;
-      font-size: .9rem;
-      margin: 4px 8px 0 0;
-    }
-    .footer {
-      padding: 28px 20px 50px;
-      color: var(--muted);
-      text-align: center;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 16px;
-      background: white;
-      color: #1d4ed8;
-      text-decoration: none;
-      font-weight: 700;
-      padding: 12px 18px;
-      border-radius: 12px;
-    }
-    .note {
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
-      border-radius: 14px;
-      padding: 16px;
-    }
-  </style>
+<title>Nonprofit Advancement Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+
+body{
+font-family:Arial;
+background:#f5f7fb;
+margin:40px;
+}
+
+h1{
+color:#1f3c88;
+}
+
+.dashboard{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-bottom:40px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.chart{
+background:white;
+padding:20px;
+margin-top:20px;
+border-radius:10px;
+}
+
+</style>
 </head>
+
 <body>
-  <header class="hero">
-    <div class="wrap">
-      <h1>Advancement Portfolio and Donor Retention Analysis</h1>
-      <p class="sub">A synthetic analytics project focused on membership participation, pledge fulfillment, and donor engagement patterns within a nonprofit advancement context.</p>
-      <a class="btn" href="https://github.com/amandapacchacommunity/Project4" target="_blank" rel="noreferrer">View GitHub Repository</a>
-    </div>
-  </header>
 
-  <main>
-    <section class="section">
-      <div class="wrap">
-        <h2>Project Overview</h2>
-        <div class="card">
-          <p>This project demonstrates how donor and fundraising data can be organized, validated, and explored to support advancement decision-making.</p>
-          <p>The analysis uses synthetic datasets to model donor records, membership activity, and pledge status across a nonprofit fundraising workflow.</p>
-          <div>
-            <span class="pill">Synthetic Data</span>
-            <span class="pill">Nonprofit Analytics</span>
-            <span class="pill">Membership Trends</span>
-            <span class="pill">Pledge Tracking</span>
-          </div>
-        </div>
-      </div>
-    </section>
+<h1>Advancement Portfolio Dashboard</h1>
 
-    <section class="section">
-      <div class="wrap">
-        <h2>What the Notebook Covers</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Data Preparation</h3>
-            <p class="muted">Loads analysis libraries and creates reproducible synthetic datasets for donor, membership, and pledge analysis.</p>
-          </div>
-          <div class="card">
-            <h3>Validation</h3>
-            <p class="muted">Checks dataset size, structure, and sample records to support clean downstream analysis.</p>
-          </div>
-          <div class="card">
-            <h3>Initial Insights</h3>
-            <p class="muted">Visualizes membership level distribution and pledge status to highlight early fundraising patterns.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="dashboard">
 
-    <section class="section">
-      <div class="wrap">
-        <h2>Example Analysis Questions</h2>
-        <div class="grid">
-          <div class="card">
-            <ul>
-              <li>How are membership levels distributed across the donor base?</li>
-              <li>What share of pledges are paid versus outstanding?</li>
-              <li>How can synthetic advancement data support repeatable analysis workflows?</li>
-            </ul>
-          </div>
-          <div class="card note">
-            <strong>Current scope:</strong>
-            <p>This version focuses on setup, validation, and introductory visuals. Future pages or notebooks can add retention rates, donor segmentation, and portfolio coverage analysis.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="card">
+<h3>Total Donors</h3>
+<p>500</p>
+</div>
 
-    <section class="section">
-      <div class="wrap">
-        <h2>Tools Used</h2>
-        <div class="card">
-          <p>Python, Pandas, NumPy, Matplotlib, Seaborn, Google Colab, and GitHub.</p>
-        </div>
-      </div>
-    </section>
-  </main>
+<div class="card">
+<h3>Membership Records</h3>
+<p>300</p>
+</div>
 
-  <footer class="footer">
-    <div class="wrap">
-      <p>Created by Amanda</p>
-    </div>
-  </footer>
+<div class="card">
+<h3>Pledge Records</h3>
+<p>200</p>
+</div>
+
+</div>
+
+<div class="chart">
+<canvas id="membershipChart"></canvas>
+</div>
+
+<div class="chart">
+<canvas id="pledgeChart"></canvas>
+</div>
+
+<script>
+
+new Chart(document.getElementById('membershipChart'),{
+type:'bar',
+data:{
+labels:['Basic','Supporter','Patron'],
+datasets:[{
+label:'Membership Distribution',
+data:[120,100,80]
+}]
+}
+})
+
+new Chart(document.getElementById('pledgeChart'),{
+type:'bar',
+data:{
+labels:['Paid','Outstanding'],
+datasets:[{
+label:'Pledge Status',
+data:[140,60]
+}]
+}
+})
+
+</script>
+
 </body>
 </html>
