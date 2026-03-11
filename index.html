@@ -13,6 +13,8 @@
       --muted: #6b7280;
       --accent: #2563eb;
       --border: #e5e7eb;
+      --green: #15803d;
+      --navy: #1d3557;
     }
 
     * { box-sizing: border-box; }
@@ -32,7 +34,7 @@
     }
 
     .wrap {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 0 auto;
     }
 
@@ -117,20 +119,32 @@
       border: 1px solid var(--border);
       border-radius: 16px;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
-      text-align: center;
     }
 
-    .metric-card h3 {
-      margin-bottom: 8px;
+    .metric-label {
+      font-size: 0.95rem;
       color: var(--muted);
-      font-size: 1rem;
+      margin-bottom: 8px;
     }
 
-    .metric-card p {
-      margin: 0;
+    .metric-value {
       font-size: 2rem;
       font-weight: 700;
-      color: #1f3c88;
+      color: var(--navy);
+      line-height: 1.2;
+    }
+
+    .metric-sub {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: var(--green);
+    }
+
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
     }
 
     .chart-card {
@@ -139,11 +153,37 @@
       border: 1px solid var(--border);
       border-radius: 16px;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
-      margin-top: 20px;
     }
 
     canvas {
       max-width: 100%;
+    }
+
+    .table-card {
+      background: white;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+      margin-top: 20px;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -152,7 +192,7 @@
     <div class="wrap">
       <h1>Advancement Portfolio and Donor Retention Analysis</h1>
       <p class="sub">
-        A synthetic analytics project focused on membership participation, pledge fulfillment, and donor engagement patterns within a nonprofit advancement context.
+        A synthetic analytics project focused on membership participation, pledge fulfillment, donor engagement patterns, and core fundraising performance within a nonprofit advancement context.
       </p>
       <a class="btn" href="https://github.com/amandapacchacommunity/Project4" target="_blank" rel="noreferrer">
         View GitHub Repository
@@ -169,13 +209,14 @@
             This project demonstrates how donor and fundraising data can be organized, validated, and explored to support advancement decision-making.
           </p>
           <p>
-            The analysis uses synthetic datasets to model donor records, membership activity, and pledge status across a nonprofit fundraising workflow.
+            The analysis uses synthetic datasets to model donor records, membership activity, pledge status, and high-level fundraising indicators across a nonprofit advancement workflow.
           </p>
           <div>
             <span class="pill">Synthetic Data</span>
             <span class="pill">Nonprofit Analytics</span>
             <span class="pill">Membership Trends</span>
             <span class="pill">Pledge Tracking</span>
+            <span class="pill">Financial KPIs</span>
           </div>
         </div>
       </div>
@@ -183,33 +224,113 @@
 
     <section class="section">
       <div class="wrap">
-        <h2>Dashboard</h2>
+        <h2>Executive Dashboard</h2>
 
         <div class="dashboard">
           <div class="metric-card">
-            <h3>Total Donors</h3>
-            <p>500</p>
+            <div class="metric-label">Total Donors</div>
+            <div class="metric-value">500</div>
+            <div class="metric-sub">Synthetic donor base</div>
           </div>
 
           <div class="metric-card">
-            <h3>Membership Records</h3>
-            <p>300</p>
+            <div class="metric-label">Membership Records</div>
+            <div class="metric-value">300</div>
+            <div class="metric-sub">Across 3 years</div>
           </div>
 
           <div class="metric-card">
-            <h3>Pledge Records</h3>
-            <p>200</p>
+            <div class="metric-label">Pledge Records</div>
+            <div class="metric-value">200</div>
+            <div class="metric-sub">Paid + outstanding</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-label">Lifetime Giving</div>
+            <div class="metric-value">$1.92M</div>
+            <div class="metric-sub">Estimated total donor value</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-label">Total Pledged</div>
+            <div class="metric-value">$865K</div>
+            <div class="metric-sub">All pledge commitments</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-label">Paid Pledges</div>
+            <div class="metric-value">$606K</div>
+            <div class="metric-sub">70% fulfillment estimate</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-label">Campaign Revenue</div>
+            <div class="metric-value">$412K</div>
+            <div class="metric-sub">3-year synthetic total</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-label">Average Donor Value</div>
+            <div class="metric-value">$3.8K</div>
+            <div class="metric-sub">Lifetime giving average</div>
           </div>
         </div>
 
-        <div class="chart-card">
-          <h3>Membership Distribution</h3>
-          <canvas id="membershipChart"></canvas>
+        <div class="chart-grid">
+          <div class="chart-card">
+            <h3>Membership Distribution</h3>
+            <canvas id="membershipChart"></canvas>
+          </div>
+
+          <div class="chart-card">
+            <h3>Pledge Status Distribution</h3>
+            <canvas id="pledgeChart"></canvas>
+          </div>
+
+          <div class="chart-card">
+            <h3>Campaign Revenue by Year</h3>
+            <canvas id="revenueChart"></canvas>
+          </div>
+
+          <div class="chart-card">
+            <h3>Giving Mix</h3>
+            <canvas id="givingMixChart"></canvas>
+          </div>
         </div>
 
-        <div class="chart-card">
-          <h3>Pledge Status Distribution</h3>
-          <canvas id="pledgeChart"></canvas>
+        <div class="table-card">
+          <h3>Key Financial Highlights</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Value</th>
+                <th>Interpretation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Total Lifetime Giving</td>
+                <td>$1.92M</td>
+                <td>Represents modeled donor value across the synthetic base.</td>
+              </tr>
+              <tr>
+                <td>Total Pledged</td>
+                <td>$865K</td>
+                <td>Shows commitment pipeline available for stewardship and follow-up.</td>
+              </tr>
+              <tr>
+                <td>Outstanding Pledge Balance</td>
+                <td>$259K</td>
+                <td>Useful for identifying future collection and engagement opportunities.</td>
+              </tr>
+              <tr>
+                <td>Campaign Revenue</td>
+                <td>$412K</td>
+                <td>Illustrates annual fundraising contribution from campaign participation.</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
@@ -233,7 +354,7 @@
           <div class="card">
             <h3>Initial Insights</h3>
             <p class="muted">
-              Visualizes membership level distribution and pledge status to highlight early fundraising patterns.
+              Visualizes membership level distribution, pledge status, and fundraising indicators to highlight early patterns.
             </p>
           </div>
         </div>
@@ -248,13 +369,14 @@
             <ul>
               <li>How are membership levels distributed across the donor base?</li>
               <li>What share of pledges are paid versus outstanding?</li>
-              <li>How can synthetic advancement data support repeatable analysis workflows?</li>
+              <li>How much modeled fundraising value is tied up in outstanding pledges?</li>
+              <li>How do campaign revenue patterns shift across years?</li>
             </ul>
           </div>
           <div class="card note">
             <strong>Current scope:</strong>
             <p>
-              This version focuses on setup, validation, and introductory visuals. Future pages or notebooks can add retention rates, donor segmentation, and portfolio coverage analysis.
+              This version focuses on setup, validation, dashboard KPIs, and introductory visuals. Future pages can add donor segmentation, retention rates, and portfolio coverage analysis.
             </p>
           </div>
         </div>
@@ -265,7 +387,7 @@
       <div class="wrap">
         <h2>Tools Used</h2>
         <div class="card">
-          <p>Python, Pandas, NumPy, Matplotlib, Seaborn, Google Colab, and GitHub.</p>
+          <p>Python, Pandas, NumPy, Matplotlib, Seaborn, Google Colab, GitHub, and Chart.js.</p>
         </div>
       </div>
     </section>
@@ -284,8 +406,13 @@
         labels: ['Basic', 'Supporter', 'Patron'],
         datasets: [{
           label: 'Membership Distribution',
-          data: [120, 100, 80]
+          data: [120, 100, 80],
+          backgroundColor: ['#93c5fd', '#60a5fa', '#1d4ed8']
         }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } }
       }
     });
 
@@ -295,8 +422,46 @@
         labels: ['Paid', 'Outstanding'],
         datasets: [{
           label: 'Pledge Status',
-          data: [140, 60]
+          data: [140, 60],
+          backgroundColor: ['#16a34a', '#dc2626']
         }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } }
+      }
+    });
+
+    new Chart(document.getElementById('revenueChart'), {
+      type: 'line',
+      data: {
+        labels: ['2022', '2023', '2024'],
+        datasets: [{
+          label: 'Campaign Revenue',
+          data: [118000, 132000, 162000],
+          borderColor: '#1d4ed8',
+          backgroundColor: '#93c5fd',
+          tension: 0.3,
+          fill: false
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: true } }
+      }
+    });
+
+    new Chart(document.getElementById('givingMixChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Membership', 'Campaign', 'Pledges Paid', 'Other Giving'],
+        datasets: [{
+          data: [95000, 412000, 606000, 807000],
+          backgroundColor: ['#60a5fa', '#2563eb', '#16a34a', '#94a3b8']
+        }]
+      },
+      options: {
+        responsive: true
       }
     });
   </script>
